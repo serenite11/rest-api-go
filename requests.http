@@ -1,0 +1,32 @@
+GET http://localhost:8080/songs
+
+###
+
+POST http://localhost:8080/songs/create
+Content-Type: application/json
+
+{
+  "id": "2",
+  "name": "What's next",
+  "author": {
+    "id": "1",
+    "name": "Drake"
+  }
+}
+###
+GET http://localhost:8080/songs/3
+###
+DELETE http://localhost:8080/songs/delete/2
+
+###
+PUT http://localhost:8080/songs/update/2
+Content-Type: application/json
+
+{
+  "id": "2",
+  "name": "Codeine crazy",
+  "author": {
+    "id": "2",
+    "name": "Future"
+  }
+}
